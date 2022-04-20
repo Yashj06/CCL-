@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Utilities */
+.text-center{
+    text-align: center;
+}
+
+p{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 600;
+}
+
+h1{
+    background-color: #9511bd;
+    font-family: 'PT Sans Narrow', sans-serif;
+    margin: 8px 0;
+    margin-top: 20px; 
+}
+
+h2{
+    font-family: 'PT Sans Narrow', sans-serif;
+    background-color: white;
+}
+
+h3{
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+label{
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+input{
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.text-danger{
+    color: red;
+}
+
+
+
+
+
+/* Navbar */
+.navbar{
+    background-color: #9511bd;
+    width: 100vw;
+    height: auto;
+}
+
+.container{
+    background-color: #9511bd;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-item{
+    background-color: #9511bd;
+    margin: 1rem 1rem;
+}
+
+.navbar-item a{
+    background-color: #9511bd;
+    color: white;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.navbar-item a:hover{
+    border-bottom: 2px solid white;
+
+}
+
+
+
+
+/* Sign Up */
+.content{
+    margin-top: 20vh;
+}
+
+.msg-error{
+    background-color: #f8d7da;
+    margin: 4px 15vw;
+    color: #a00;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    text-align: center;
+    border: 2px solid #f8c0c0;
+    border-radius: 8px;
+}
+
+.content table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content table tr td{
+    font-family: 'IBM Plex Sans', sans-serif;
+    padding: 6px;
+}
+
+.content table tr td input{
+    font-family: 'IBM Plex Sans', sans-serif;
+    padding: 2px;
+}
+
+.content table tr:nth-child(5){
+    text-align: center;
+}
+
+input[type=text],
+input[type=email],
+input[type=password]{
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 200px;
+}
+
+input[type=submit],
+input[type=reset]{
+    color: white;
+    width: 100px;
+    height: 32px;
+    border: 1px solid black;
+    border-radius: 4px;
+    transition-duration: 0.2s;    
+}
+
+input[type=submit]:hover,
+input[type=reset]:hover{
+    cursor: pointer;    
+}
+
+input[type=submit]{
+    background-color: blue;
+}
+
+input[type=submit]:hover{
+    background-color: darkblue;
+}
+
+input[type=reset]{
+    background-color: red;
+}
+
+input[type=reset]:hover{
+    background-color: darkred;
+}
+
+@media screen and (max-width: 767px){
+    p, label{
+        font-size: 14px;
+    }
+
+    h1{
+        font-size: 24px;
+    }
+
+    h2{
+        font-size: 18px;
+    }
+    
+    input[type=text],
+    input[type=email],
+    input[type=password]{
+        width: 150px;
+    }
+}

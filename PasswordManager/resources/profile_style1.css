@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #f0f0f0;
+}
+
+/* Navbar */
+.navbar{
+    background-color: #9511bd;
+    width: 100vw;
+    height: auto;
+}
+
+.container{
+    background-color: #9511bd;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-item{
+    background-color: #9511bd;
+    margin: 1rem 1rem;
+}
+
+.navbar-item a{
+    background-color: #9511bd;
+    color: white;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.navbar-item a:hover{
+    border-bottom: 2px solid white;
+
+}
+
+
+
+
+
+/* Profile */
+.profile > p{
+    margin-top: 5vh;
+    text-align: center;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.profile table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile table td{
+    padding-right: 2vw;
+    text-align: left;
+    font-family: 'IBM Plex Sans', sans-serif;
+    overflow: hidden;
+}
+
+.info{  
+    padding-left: 0.5vw;
+    width: 15vw;
+    background: white;
+    border:2px solid #2f2f2f;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+
+
+/* Passwords */
+.passwords > p{
+    text-align: center;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 25px;
+}
+
+.btn-del{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    background-color: #d00;
+    border: 8px solid #d00;
+}
+
+
+.btn-add{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    background-color: #0d0;
+    border: 8px solid #0d0;
+    color: #fff;
+    border-radius: 4px;
+}
+
+
+.passwords table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.passwords table th{
+    font-family: 'IBM Plex Sans', sans-serif;
+    width: auto;
+    padding: 8px;
+}

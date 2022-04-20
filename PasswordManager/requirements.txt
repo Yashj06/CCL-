@@ -1,0 +1,92 @@
+1)Login to your AWS account as a root user
+2)Create an EC2 Instance next. Make the following changes while creating an Instance.
+	A. Choose AMI: Microsoft Windows Server 2022 Base (in Free Tier)
+	B. Instance Type: t2.micro
+	C. No change in Instance Details.
+	D. No change is Storage. Assigned storage is sufficient.
+	E. Add a tag: Key: Name , Value: instance_1 (name of instance you want)
+	F. Security Group Configuration: Add Rules: Custom TCP protocol and set port number to 8080. Add HTTP and HTTPS rules as well.
+	G. When asked for Key Pair, select Create a new Key Pair. Name the Key Pair and create. A
+	   .pem file will be downloaded. Know the location of this file for further use.
+	H. Launch the instance
+	I. Go to EC2>>Instances and wait for the Instance State to display Running and Status
+	   Check to display 2/2 checks passed before proceeding.
+3) Create RDP Connect.
+	A. Select the instance you created and click on Connect in top panel.
+	B. Navigate to RDP Client section.
+	C. Click on Download remote desktop file, and a .rdp file will be downloaded.
+	D. In the password section, click on Get Password.
+	E. Here, browse and select the Key Pair file we downloaded in the previous step in .pem
+	   format. Click on Decrypt Password. You will be redirected to the previous page and will
+           see the password.
+	F. Open the .rdp file now. Click on Connect in the pop-up. You will be asked to enter a
+	   password for the Administrator user. Copy the Decrypted password from the console and
+	   past in the dialogue box and connect to the RDP client. Click on Yes if another pop-up
+	   appears.
+	G. As we have chosen Windows AMI, a VM will open up with Windows OS. Wait till you
+	   see the instance details on the Desktop of this VM before moving further. Select Refresh
+	   by right-clicking in the VM if you don’t see the details in the top right corner.
+	H. RDP Connection is now established.
+	I. To run this project, install Python and/or Xampp if you wish to check the SQL connectivity.
+     	   You open Apache and MySQL connection on Xampp, create a database by the name of
+	   text_summarizer in phpMyAdmin and import the .sql file.
+4) Installing XAMPP
+	Our XAMPP tutorial will take you through the installation process for the software package
+	on
+	Windows. If you’re using Linux or Mac OS X, then the steps listed below for the installation
+	process may differ.
+	A. Step 1: Download
+		XAMPP is a release made available by the non-profit project Apache Friends. Versions with
+		PHP 5.5, 5.6, or 7 are available for download on the Apache Friends website.
+	B. Step 2: Run .exe file
+		Once the software bundle has been downloaded, you can start the installation by double
+		clicking on the file with the ending.exe.
+	C. Step 3: Deactivate any antivirus software
+		Since an active antivirus program can negatively affect the installation process, it’s
+		recommended to temporarily pause any antivirus software until all XAMPP components
+		have successfully been installed.
+	D. Step 4: Deactivate UAC
+		User Account Control (UAC) can interfere with the XAMPP installation because it limits
+		writing access to the C: drive, so we recommend you deactivate this too for the duration of
+		the installation process. To find out how to turn off your UAC, head to the Microsoft
+		Windows support pages.
+	E. Step 5: Start the setup wizard
+		After you’ve opened the .exe file (after deactivating your antivirus program(s) and taken note
+		of the User Account Control, the start screen of the XAMPP setup wizard should appear
+		automatically. Click on ‘Next’ to configure the installation settings.
+	F. Step 6: Choose software components
+		Under ‘Select Components’, you have the option to exclude individual components of the
+		XAMPP software bundle from the installation. But for a full local test server, we
+		recommend you install using the standard setup and all available components. After
+		making your choice, click ‘Next’.
+	G. Step 7: Choose the installation directory
+		In this next step, you have the chance to choose where you’d like the XAMPP software packet
+		to be installed. If you opt for the standard setup, then a folder with the name XAMPP will
+		be created under C:\ for you. After you’ve chosen a location, click ‘Next’.
+	H. Step 8: Start the installation process
+		Once all the aforementioned preferences have been decided, click to start the installation. The
+		setup wizard will unpack and install the selected components and save them to the
+		designated directory. This process can take several minutes in total. You can follow the
+		progress of this installation by keeping an eye on the green loading bar in the middle of the
+		screen.
+	I. Step 9: Windows Firewall blocking
+		Your Firewall may interrupt the installation process to block the some components of the
+		XAMPP. Use the corresponding check box to enable communication between the Apache
+		server and your private network or work network. Remember that making your XAMPP
+		server available for public networks isn’t recommended.
+	J. Step 10: Complete installation
+		Once all the components are unpacked and installed, you can close the setup wizard by clicking
+		on ‘Finish’. Click to tick the corresponding check box and open the XAMPP Control Panel
+		once the installation process is finished.
+	K. The XAMPP Control Panel
+		Controls for the individual components of your test server can be reached through the XAMPP
+		Control Panel. The clear user interface logs all actions and allows you to start or stop
+		individual modules with a single. The XAMPP Control Panel also offers you various other
+		buttons, including:
+			i. Config: allows you to configure the XAMPP as well as the individual components
+			ii. Netstat: shows all running processes on the local computer
+			iii. Shell: opens a UNIX shell
+			iv. Explorer: opens the XAMPP folder in Windows Explorer
+			v. Services: shows all services currently running in the background
+			vi. Help: offers links to user forums
+			vii. Quit: closes the XAMPP Control Panel

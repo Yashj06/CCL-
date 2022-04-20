@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+/* Utilities */
+.text-center{
+    text-align: center;
+}
+
+p{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 600;
+}
+
+h1{
+    background-color: #9511bd;
+    font-family: 'PT Sans Narrow', sans-serif;
+    margin: 8px 0;
+    margin-top: 20px; 
+}
+
+h2{
+    font-family: 'PT Sans Narrow', sans-serif;
+    background-color: white;
+}
+
+h3{
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+label{
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+input{
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.text-danger{
+    color: red;
+}
+
+
+
+/* Navbar */
+.navbar{
+    background-color: #9511bd;
+    width: 100vw;
+    height: auto;
+}
+
+.container{
+    background-color: #9511bd;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-item{
+    background-color: #9511bd;
+    margin: 1rem 1rem;
+}
+
+.navbar-item a{
+    background-color: #9511bd;
+    color: black;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.navbar-item a:hover{
+    border-bottom: 2px solid black;
+
+}
+
+
+
+
+
+/* Body */
+.flex-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body{
+    background-color: #9511bd;
+    width: 50%;
+}
+
+.info{
+    background-color: #9511bd;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 600;
+    padding: 2px 0;
+}
+
+
+
+
+
+/* Login */
+.login-form{
+    position: relative;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 4px;
+    padding: 8px;
+    box-shadow: 0px 0px 20px;
+    top: 30px;
+}
+
+input[type=text], input[type=password]{
+    margin: 8px 0;
+    width: 200px;
+    height: 32px;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 2px;
+}
+
+input[type=submit]{
+    background-color: blue;
+    color: white;
+    width: 100px;
+    height: 32px;
+    border: 1px solid black;
+    border-radius: 4px;
+    transition-duration: 0.2s;
+}
+
+input[type=submit]:hover{
+    background-color: darkblue;
+    cursor: pointer;    
+}
+
+
+
+
+
+/* How it works */
+.about-header{
+    margin-top: 70px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+/* Features */
+.features-header{
+    margin-top: 35px;
+    padding-bottom: 10px;
+}
+
+.features{
+    background-color: white;
+}
+
+.grid{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 10px;
+    grid-auto-flow: column;
+}
+
+img{
+    width: 96px;
+    height: 96px;
+    padding: 4px;
+    margin-bottom: 4px;
+    margin-top: 4px;
+    border: 4px solid black;
+    border-radius: 8px;
+    margin-left: 37%
+}
+
+img:hover{
+    background-color: #d5d0d6;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* Footer */
+.footer-info{
+    margin-top: 70px;
+    padding: 20px 0;
+    width: 100vw;
+    background-color: #3a0749;
+    border-top: 1px solid black;
+}
+
+.footer-info p{
+    color: white;
+}
+
+.footer-info h2{
+    padding-top: 8px;
+    background-color: #3a0749;
+    color: white;
+    font-weight: 500;
+}
+
+
+
+
+/* Media Queries */
+@media screen and (max-width: 767px){
+    p, label{
+        font-size: 14px;
+    }
+
+    h1{
+        font-size: 24px;
+    }
+
+    h2{
+        font-size: 18px;
+    }
+
+    .grid{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-gap: 10px;
+        grid-auto-flow: unset;
+    }
+    
+    img{
+        margin-left: 40%;
+    }
+
+    .flex-body{
+        display: flex;
+        flex-direction: column;
+        justify-content: unset;
+        align-items: unset;
+    }
+
+    .body{
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .login-form{
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+
+    input[type=text], input[type=password]{
+        width: 95%;
+    }
+}
